@@ -1,0 +1,13 @@
+/* vamos a crear variables de colores, para que cuando necesitemos el color solo mandar a llamar la variable */
+:root{
+  --color-azul: #1a73e8;/* manera de definir el color */
+  --color-negro:#202124;
+  --color-blanco:#ffffff;
+  --color-claro:#ededed;
+  --color-gris:#b4b4b4;
+  --font-principal: Arial, Helvetica, sans-serif;/* como definir una fuente de texto */
+}
+body{
+    font-family: var(--font-principal);/* asi se declara el como usar la fuente principal declarada en root */
+    color:var(--color-azul)/* asi declaramos el como usar un color */
+}
