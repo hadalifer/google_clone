@@ -7,7 +7,55 @@
   --color-gris:#b4b4b4;
   --font-principal: Arial, Helvetica, sans-serif;/* como definir una fuente de texto */
 }
+header{
+    overflow: hidden;/*esto es para que los elementos que estan abajo no fluyan alrededor de lo que esta en header  */
+}
+
+header nav{
+    float: right;
+    margin-right: 30px;
+    padding: 10px 0;
+}
+nav a{
+    text-decoration: none;/* esto es para quitar la decoracion automatica */
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 13px;
+    vertical-align:middle ;/* es para alinear elementos en linea y que no queden desconpensados y se alinien hacia enmedio*/
+}
+nav .nav-link{
+    color: var(--color-negro);/* para mandar a llamar el color declarado en root */
+}
+nav .nav-link:hover{
+    text-decoration: underline ;/* es para que aparezca la linea de abajo */
+}
+nav .nav-apps{
+    padding: 5px;
+    border-radius: 50%;
+}
+nav .nav-apps:hover{
+    background-color: var(--color-claro);
+}
+nav .nav-apps img{
+    display: inline-block;
+    vertical-align: middle;
+}
+nav .nav-login {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    padding: 10px 15px;
+    border-radius: 100px;
+    font-size: 14px;
+
+}
+nav .nav-login:hover{
+    box-shadow: 0 0 3px var(--color-azul);
+}
 body{
     font-family: var(--font-principal);/* asi se declara el como usar la fuente principal declarada en root */
     color:var(--color-azul)/* asi declaramos el como usar un color */
+}
+section img{
+    float: right;/* esto es para que los elementos se acomoden del otro lado y la imagen este flotando en el lugara signado */
+
 }
